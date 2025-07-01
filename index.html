@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spider-Man Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="nav-bar">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#mywork">My Work</a>
+      <a href="#versions">Versions</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="first-section" id="home">
+    <div class="half-width">
+      <h2>Hello I'm</h2>
+      <h2><span class="spidey-name">Peter Parker</span></h2>
+      <p class="first-p">
+        I’m Peter Parker, a passionate photographer by day and your friendly neighborhood Spider-Man by night,
+        always swinging through New York to keep the city safe and vibrant.
+      </p>
+
+      <p class="bio-info">🕷️ Age: 22 | 🏙️ New York | 🕸️ Superpower: Web-Slinging</p>
+
+      <div class="cta-buttons">
+        <a href="#versions" class="btn">View My Work</a>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+
+      <div class="scroll-down">
+        <a href="#versions"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </div>
+
+    <div class="half-width">
+      <img
+        src="images/Spiderman clipart , Spiderman watercolor design, Spiderman png, Spiderman splash design, transparent background, Superhero clipart.jpeg"
+        alt="My Artwork" />
+    </div>
+  </section>
+
+  <!-- My Work Section -->
+  <section class="second-section" id="mywork">
+    <div class="half-width">
+      <img
+        src="https://images.unsplash.com/photo-1521714161819-15534968fc5f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BpZGVybWFufGVufDB8fDB8fHww"
+        alt="" />
+    </div>
+
+    <div class="half-width">
+      <h2>My Work</h2>
+      <p>
+        As Spider-Man, I’ve battled villains, rescued civilians, and protected New York City with web-slinging flair.
+        Every mission is a step toward making the world a safer place.
+      </p>
+    </div>
+  </section>
+
+  <!-- Versions Section -->
+  <section class="third-section" id="versions">
+    <h2>Three Version Of Mine</h2>
+    <div id="versions-container">
+      <div class="version">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0f/Tom_Holland_as_Spider-Man.jpg" alt="Tom Holland" />
+        <p class="actor-name">🕷️‍🕸️ Tom Holland</p>
+      </div>
+      <div class="version">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Andrew_Garfield_as_Spider-Man.jpg/250px-Andrew_Garfield_as_Spider-Man.jpg"
+          alt="Andrew Garfield" />
+        <p class="actor-name">🕸️ Andrew Garfield</p>
+      </div>
+      <div class="version">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/bf/Tobey_Maguire_as_Spider-Man.jpg" alt="Tobey Maguire" />
+        <p class="actor-name">🕷️ Tobey Maguire</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <h2>Comic Moments 📸</h2>
+    <div class="gallery">
+      <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/08/spider-man-history.jpg" alt="Scene 1" />
+      <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/07/amazing-fantasy.jpg?q=50&fit=crop&w=500&dpr=1.5" alt="Scene 2" />
+      <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/02/Gwen-Stacy-death-Spider-Man.jpg" alt="Scene 3" />
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm" action="https://formsubmit.co/sopnilnil00@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();         
+    window.open('thankyou.html', '_blank');  thankyou.html 
+    this.submit();                  
+  });
+</script>
+
+
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top">
+    <a href="#home"><i class="fas fa-angle-up"></i></a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Made with 💥 by Sopnil | © 2025 Spider-Verse Web Portfolio</p>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

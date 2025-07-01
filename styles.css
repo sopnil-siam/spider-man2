@@ -1,0 +1,358 @@
+/* Common Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Neue', cursive;
+  background: #f0f0f0;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #e60000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.nav-bar nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 12px 0;
+}
+
+.nav-bar nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Comic Neue', cursive;
+  transition: color 0.3s ease;
+}
+
+.nav-bar nav a:hover {
+  color: #000;
+}
+
+/* Section common */
+section {
+  padding: 20px;
+  margin: 80px auto;
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Home Section (first-section) */
+.first-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 80px;
+  margin-top: 20px;
+}
+
+.half-width {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.half-width img {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+}
+
+.spidey-name {
+  color: #e60000;
+  text-shadow: 2px 2px 3px #000;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 36px;
+}
+
+.first-p,
+.bio-info,
+.second-section p {
+  background: #fffbe6;
+  padding: 12px 20px;
+  border-left: 5px solid #e60000;
+  box-shadow: 2px 2px 5px #000;
+  font-size: 18px;
+  margin: 20px 0;
+  color: #222;
+  font-family: 'Comic Neue', cursive;
+  line-height: 1.6;
+}
+
+.bio-info {
+  font-size: 16px;
+  color: #333;
+}
+
+/* CTA button */
+.cta-buttons .btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #e60000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  margin: 10px 0;
+  transition: 0.3s;
+  font-family: 'Comic Neue', cursive;
+}
+
+.cta-buttons .btn:hover {
+  background-color: #fff;
+  color: #e60000;
+  border: 2px solid #e60000;
+}
+
+/* Social icons */
+.social-icons a {
+  color: #e60000;
+  margin-right: 15px;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #000;
+}
+
+/* Scroll down arrow */
+.scroll-down {
+  margin-top: 20px;
+}
+
+.scroll-down a {
+  color: #e60000;
+  font-size: 30px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Second Section (My Work) */
+.second-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 80px;
+}
+
+.second-section .half-width img {
+  max-width: 400px;
+}
+
+/* Third Section (Versions) */
+.third-section h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #e60000;
+  margin-top: 10px;
+}
+
+#versions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 20px 0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.version {
+  flex: 1 1 250px;
+  max-width: 280px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.version:hover {
+  transform: scale(1.05);
+}
+
+.version img {
+  width: 100%;
+  height: 370px;
+  object-fit: contain;
+  display: block;
+}
+
+.actor-name {
+  text-align: center;
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #e60000;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.actor-name:hover {
+  text-shadow: 1px 1px 2px #000;
+  transform: scale(1.05);
+}
+
+/* Gallery Section */
+.gallery-section h2 {
+  text-align: center;
+  color: #e60000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto 80px;
+  padding: 40px 20px;
+  background-color: #fffbe6;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #e60000;
+  font-family: 'Comic Neue', cursive;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 12px;
+  border: 2px solid #e60000;
+  border-radius: 8px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.contact-section button {
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Comic Neue', cursive;
+}
+
+.contact-section button:hover {
+  background-color: #b30000;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #e60000;
+  border-radius: 50%;
+  padding: 12px 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.back-to-top a {
+  color: #fff;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.back-to-top:hover {
+  background-color: #b30000;
+}
+
+
+.site-footer {
+  background-color: #111;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-top: 4px solid #e60000;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .first-section,
+  .second-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #versions-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .version {
+    width: 85%;
+    max-width: 350px;
+  }
+}
